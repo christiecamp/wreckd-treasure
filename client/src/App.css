@@ -1,0 +1,251 @@
+/* App.css */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Pirata One", sans-serif;
+  background-image: url("/swirl-bg.gif");
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* pirate font for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pirata One", sans-serif;
+}
+
+
+#tours-cost,
+#tax-virginia,
+#total {
+  font-family: "Pirata One", sans-serif;
+}
+
+/* background change 1 */
+.new-background-class {
+  background-image: url("/creature-bg.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.ant-collapse-arrow {
+  color: #f4cb5c;
+}
+
+div.ant-collapse-body {
+  background-color: #4a555f !important;
+  border-color: #F4CB5C !important;
+  border-radius: 10px !important;
+}
+/* background change 2 */
+.new-background-class-two {
+  background-image: url("/shipwreck-bg.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* login background change */
+.login-background-class {
+  background-image: url("/creature-bg.gif");
+}
+
+/* signup background change */
+.signup-background-class {
+  background-image: url("/waves-bg.gif");
+}
+
+/* login tab background */
+#login-signup-tabs-tab-login {
+  background-color: transparent;
+  color: white;
+}
+
+div.ant-collapse-content-box {
+  background-color: #839da9;
+  border-radius: 10px;
+  border-color: #3e1e19;
+}
+
+.ant-collapse-header {
+  border-color: #3f2517 !important; /* Change the border color */
+}
+/* login tab background */
+#login-signup-tabs-tab-login {
+  background-color: #88b4c5;
+}
+
+/* signup tab background */
+#login-signup-tabs-tab-signup {
+  background-color: transparent;
+  color: white;
+  background-color: #6b846c;
+}
+
+.action-button {
+  position: relative;
+}
+
+.button-text {
+  position: relative;
+  z-index: 1;
+}
+
+/* .header-image {
+  width: 20%;
+  height: 20%;
+  position: left;
+} */
+
+.hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 218, 138, 0);
+  transition: background-color 0.3s ease;
+  z-index: 0;
+}
+
+.action-button:hover .hover-effect {
+  background-color: rgba(250, 218, 138, 0.3);
+}
+
+.login-form {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.signup-form {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* navbar gold text on hover */
+.gold-text {
+  color: gold !important;
+}
+
+.info-window-content {
+  font-size: 13px;
+}
+
+/* login & signup form tab and background */
+.tab-content {
+  width: 400px;
+  border-radius: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.action-button {
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+
+/* treasure map container */
+/* only providing a white border... */
+.map-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: none;
+}
+
+
+/* skull & cross bones logo */
+.App-logo {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}
+
+/* holds form container for login & sign up in current position */
+.landing-page-container {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  position: relative;
+}
+
+/* needs to be contained and have absolute & relative position */
+.bookBTN {
+  font-size: 16px;
+  cursor: pointer;
+  bottom: 20px;
+  background-color: #3f2517;
+  background: linear-gradient(0.5turn, #d4a666, #3f2517);
+  border-radius: 30px;
+  width: 300px;
+  color: transparent;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* embeded google maps api iframe element */
+/* ensures iframe doesn't overflow its container */
+iframe {
+  max-width: 100%;
+}
+
+/* Adjusting the width of the Item column */
+.ant-table-cell.tourName {
+  width: 90px !important; /* Adjust the width as needed */
+}
+
+/* Adjusting the width of the Cost column */
+.ant-table-cell.tourCost {
+  width: 80px !important; /* Adjust the width as needed */
+}
+
+/* Adjusting the width of the Actions column */
+.ant-table-cell.actions {
+  width: 80px !important; /* Adjust the width as needed */
+}
+
+@media screen and (min-width: 768px) {
+  /* Base screens */
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablets in landscape mode */
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* Tablets in portrait mode */
+}
+@media screen and (max-width: 767px) {
+  /* Smartphones */
+  #map {
+    height: 300px; /* Adjust the height for smaller screens */
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Large desktop screens */
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  /* High-resolution displays */
+}
+@media (color-gamut: srgb) {
+  /* Screens with an sRGB color gamut */
+}
